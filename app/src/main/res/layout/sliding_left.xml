@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lay_content">
+
+        <com.kunulo.share_ifi.view.CircleImageView
+            android:id="@+id/iv_user_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/user_icon_default" />
+
+        <com.kunulo.share_ifi.view.MyTextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_user_icon"
+            android:layout_centerHorizontal="true"
+            android:text="157268161054"
+            android:textColor="@color/color_text_content"
+            android:textSize="@dimen/size_slding_item_content" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lay_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_item_selector"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/sliding_item_margin_top"
+            android:paddingLeft="@dimen/sliding_item_margin_left"
+            android:paddingTop="@dimen/sliding_item_margin_top">
+
+            <com.kunulo.share_ifi.view.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/my_wallet"
+                android:textColor="@color/color_text_content"
+                android:textSize="@dimen/size_slding_item_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lay_devices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_item_selector"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/sliding_item_margin_top"
+            android:paddingLeft="@dimen/sliding_item_margin_left"
+            android:paddingTop="@dimen/sliding_item_margin_top">
+
+            <com.kunulo.share_ifi.view.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/my_devices"
+                android:textColor="@color/color_text_content"
+                android:textSize="@dimen/size_slding_item_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_item_selector"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/sliding_item_margin_top"
+            android:paddingLeft="@dimen/sliding_item_margin_left"
+            android:paddingTop="@dimen/sliding_item_margin_top">
+
+            <com.kunulo.share_ifi.view.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/my_order"
+                android:textColor="@color/color_text_content"
+                android:textSize="@dimen/size_slding_item_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_item_selector"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/sliding_item_margin_top"
+            android:paddingLeft="@dimen/sliding_item_margin_left"
+            android:paddingTop="@dimen/sliding_item_margin_top">
+
+            <com.kunulo.share_ifi.view.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/my_coupon"
+                android:textColor="@color/color_text_content"
+                android:textSize="@dimen/size_slding_item_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_item_selector"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/sliding_item_margin_top"
+            android:paddingLeft="@dimen/sliding_item_margin_left"
+            android:paddingTop="@dimen/sliding_item_margin_top">
+
+            <com.kunulo.share_ifi.view.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/about_us"
+                android:textColor="@color/color_text_content"
+                android:textSize="@dimen/size_slding_item_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_item_selector"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/sliding_item_margin_top"
+            android:paddingLeft="@dimen/sliding_item_margin_left"
+            android:paddingTop="@dimen/sliding_item_margin_top">
+
+            <com.kunulo.share_ifi.view.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/feedback"
+                android:textColor="@color/color_text_content"
+                android:textSize="@dimen/size_slding_item_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.kunulo.share_ifi.view.MyButton
+        android:id="@+id/bt_login_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:text="@string/login_out"
+        android:textColor="@color/color_text_grgrav_select"
+        android:textSize="@dimen/size_slding_item_content" />
+
+
+</RelativeLayout>

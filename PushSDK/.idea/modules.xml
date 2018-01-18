@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../BaseRecyclerViewAdapter/BaseRecyclerViewAdapter.iml" filepath="$PROJECT_DIR$/../BaseRecyclerViewAdapter/BaseRecyclerViewAdapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PullToRefresh/PullToRefresh.iml" filepath="$PROJECT_DIR$/../PullToRefresh/PullToRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PushSDK.iml" filepath="$PROJECT_DIR$/PushSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Sagosim.iml" filepath="$PROJECT_DIR$/../Sagosim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TagsEditText/TagsEditText.iml" filepath="$PROJECT_DIR$/../TagsEditText/TagsEditText.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../fragmentation/fragmentation.iml" filepath="$PROJECT_DIR$/../fragmentation/fragmentation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../library_email_send/library_email_send.iml" filepath="$PROJECT_DIR$/../library_email_send/library_email_send.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sweet-alert-dialog/sweet-alert-dialog.iml" filepath="$PROJECT_DIR$/../sweet-alert-dialog/sweet-alert-dialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../swipeListview/swipeListview.iml" filepath="$PROJECT_DIR$/../swipeListview/swipeListview.iml" />
+    </modules>
+  </component>
+</project>

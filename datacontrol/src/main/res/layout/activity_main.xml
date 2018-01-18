@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ListView
+        android:id="@+id/lv_place"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_place">
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/lv_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_place"
+        android:layout_toRightOf="@+id/lv_place"
+        android:scrollbars="none">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/tv_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/rent_status"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></TextView>
+
+</RelativeLayout>

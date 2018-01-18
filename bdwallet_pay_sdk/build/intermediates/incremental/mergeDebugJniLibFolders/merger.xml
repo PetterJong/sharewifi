@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\share_ifi\bdwallet_pay_sdk\libs"><file name="armeabi/libbd_wsp_v1_0.so" path="D:\share_ifi\bdwallet_pay_sdk\libs\armeabi\libbd_wsp_v1_0.so"/><file name="Cashier_SDK-v4.2.2.jar" path="D:\share_ifi\bdwallet_pay_sdk\libs\Cashier_SDK-v4.2.2.jar"/></source></dataSet><dataSet config="debug"><source path="D:\share_ifi\bdwallet_pay_sdk\src\debug\jniLibs"/></dataSet></merger>

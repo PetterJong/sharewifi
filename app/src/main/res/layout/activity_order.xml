@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/title_bar" />
+
+    <RadioGroup
+        android:id="@+id/rg_content"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titlebar"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_rent"
+            style="@style/viewPageSelector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:text="@string/renting" />
+
+        <RadioButton
+            android:id="@+id/rb_wait_pay"
+            style="@style/viewPageSelector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/wait_to_pay" />
+
+        <RadioButton
+            android:id="@+id/rb_has_complemet"
+            style="@style/viewPageSelector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/has_commplete" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/lay_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackGround"
+        android:layout_below="@+id/rg_content">
+
+    </FrameLayout>
+
+</RelativeLayout>

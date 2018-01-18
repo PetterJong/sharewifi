@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@color/colorBackGround"
+        android:paddingLeft="@dimen/base_padding"
+        android:paddingRight="@dimen/base_padding">
+
+        <com.kunulo.share_ifi.view.MyTextView
+            android:id="@+id/tv_order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/order_num"
+            android:textColor="@color/color_item_title_text" />
+
+        <com.kunulo.share_ifi.view.MyTextView
+            android:id="@+id/tv_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="2017-09-14 18:10:15"
+            android:textColor="@color/color_item_title_text" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_line_grgrav" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@color/colorBackGround"
+        android:paddingLeft="@dimen/base_padding"
+        android:paddingRight="@dimen/base_padding">
+
+        <com.kunulo.share_ifi.view.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/rent_place"
+            android:textColor="@color/color_item_content_text" />
+
+
+        <com.kunulo.share_ifi.view.MyTextView
+            android:id="@+id/tv_rent_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="奔腾科技园"
+            android:textColor="@color/color_item_content_text" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@color/colorBackGround"
+        android:paddingLeft="@dimen/base_padding"
+        android:paddingRight="@dimen/base_padding">
+
+        <com.kunulo.share_ifi.view.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/rent_money"
+            android:textColor="@color/color_item_content_text" />
+
+        <com.kunulo.share_ifi.view.MyTextView
+            android:id="@+id/tv_rent_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="0.0元"
+            android:textColor="@color/color_item_content_text" />
+
+    </RelativeLayout>
+
+    <com.kunulo.share_ifi.view.MyButton
+        android:id="@+id/bt_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/toPay"
+        android:paddingLeft="@dimen/base_padding"
+        android:paddingRight="@dimen/base_padding"
+        android:background="@color/color_title_color"
+        android:textColor="#FFFFFFFF"
+        android:visibility="gone"/>
+
+</LinearLayout>

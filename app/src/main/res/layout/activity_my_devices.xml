@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/lay_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebar"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/lay_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/lay_button"
+            android:layout_alignTop="@+id/lay_button"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/lay_button"
+            android:background="@color/colorBackGround"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lay_device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.kunulo.share_ifi.view.MyTextView
+                    style="@style/myDeviceItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/device_name" />
+
+                <com.kunulo.share_ifi.view.MyTextView
+                    android:id="@+id/tv_device_name"
+                    style="@style/myDeviceItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_item_content_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_device_wifi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.kunulo.share_ifi.view.MyTextView
+                    style="@style/myDeviceItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/device_wifi_name" />
+
+                <com.kunulo.share_ifi.view.MyTextView
+                    android:id="@+id/tv_device_wifi_name"
+                    style="@style/myDeviceItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_item_content_text" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay_device_wifi_password"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <com.kunulo.share_ifi.view.MyTextView
+                    android:id="@+id/tv_device_wifi_password"
+                    style="@style/myDeviceItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_device_wifi_password_remind"
+                    android:textColor="@color/color_item_content_text" />
+
+                <com.kunulo.share_ifi.view.MyTextView
+                    android:id="@+id/tv_paste"
+                    style="@style/myDeviceItemText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/base_padding"
+                    android:layout_toRightOf="@+id/tv_device_wifi_password"
+                    android:gravity="center"
+                    android:text="@string/paste"
+                    android:textColor="@color/color_item_content_text" />
+
+                <com.kunulo.share_ifi.view.MyTextView
+                    android:id="@+id/tv_device_wifi_password_remind"
+                    style="@style/myDeviceItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_device_wifi_password"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/tv_device_wifi_password"
+                    android:text="@string/device_wifi_password" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_button"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <com.kunulo.share_ifi.view.MyButton
+                android:id="@+id/bt_get_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="#f35513"
+                android:text="@string/device_get_wifi" />
+
+            <com.kunulo.share_ifi.view.MyButton
+                android:id="@+id/bt_get_pay_num"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="#f35513"
+                android:text="@string/get_pay_num"
+                android:visibility="invisible" />
+
+            <com.kunulo.share_ifi.view.MyButton
+                android:id="@+id/bt_return_device"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="#f35513"
+                android:text="@string/return_device" />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/grgrav_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/grgrav_line_height"
+            android:layout_below="@+id/lay_wifi"
+            android:background="@color/color_line_grgrav" />
+
+        <LinearLayout
+            android:id="@+id/lay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grgrav_line"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_device_item_height"
+                android:layout_marginLeft="@dimen/base_padding"
+                android:layout_marginRight="@dimen/base_padding"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.kunulo.share_ifi.view.MyTextView
+                    style="@style/myDeviceItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rent_place2" />
+
+                <com.kunulo.share_ifi.view.MyTextView
+                    android:id="@+id/tv_rent_place"
+                    style="@style/myDeviceItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_padding"
+                    android:text="杭州-奔腾科技园"
+                    android:textColor="@color/color_item_content_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_device_item_height"
+                android:layout_marginLeft="@dimen/base_padding"
+                android:layout_marginRight="@dimen/base_padding"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.kunulo.share_ifi.view.MyTextView
+                    style="@style/myDeviceItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rent_time" />
+
+                <com.kunulo.share_ifi.view.MyTextView
+                    android:id="@+id/tv_start_time"
+                    style="@style/myDeviceItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_padding"
+                    android:text="asfasfasfa"
+                    android:textColor="@color/color_item_content_text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/grgrav_line2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/grgrav_line_height"
+            android:layout_below="@+id/lay2"
+            android:background="@color/color_line_grgrav" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_device_item_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lay3"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/base_padding"
+            android:paddingRight="@dimen/base_padding">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5">
+
+                <com.kunulo.share_ifi.view.MyTextView
+                    style="@style/myDeviceItemText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/connect_num" />
+
+                <com.kunulo.share_ifi.view.MyTextView
+                    android:id="@+id/tv_connect_num"
+                    style="@style/myDeviceItemText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/base_padding"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="3"
+                    android:textColor="@color/color_item_content_text" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <com.kunulo.share_ifi.view.MyTextView
+                    style="@style/myDeviceItemText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/flow" />
+
+                <com.kunulo.share_ifi.view.MyTextView
+                    android:id="@+id/tv_flow"
+                    style="@style/myDeviceItemText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/base_padding"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="500M"
+                    android:textColor="@color/color_item_content_text" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_device_item_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/grgrav_line2"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/base_padding"
+            android:paddingRight="@dimen/base_padding">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5">
+
+                <com.kunulo.share_ifi.view.MyTextView
+                    style="@style/myDeviceItemText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/battery_status" />
+
+                <com.kunulo.share_ifi.view.MyTextView
+                    android:id="@+id/tv_battery"
+                    style="@style/myDeviceItemText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/base_padding"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="100%"
+                    android:textColor="@color/color_item_content_text" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <com.kunulo.share_ifi.view.MyTextView
+                    style="@style/myDeviceItemText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/charge_status" />
+
+                <com.kunulo.share_ifi.view.MyTextView
+                    android:id="@+id/tv_charge_status"
+                    style="@style/myDeviceItemText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/base_padding"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="正在充电"
+                    android:textColor="@color/color_item_content_text" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <com.kunulo.share_ifi.view.MyTextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebar"
+        android:layout_centerInParent="true"
+        android:background="@color/colorBackGround"
+        android:gravity="center"
+        android:text="@string/no_rent_device"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

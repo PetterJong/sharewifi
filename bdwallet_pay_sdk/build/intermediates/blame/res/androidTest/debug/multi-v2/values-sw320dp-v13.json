@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\share_ifi\\bdwallet_pay_sdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-sw320dp-v13\\values-sw320dp-v13.xml",
+            "map": [
+                {
+                    "source": "D:\\share_ifi\\bdwallet_pay_sdk\\build\\intermediates\\bundles\\debug\\res\\values-sw320dp-v13\\values-sw320dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "60",
+                        "endOffsets": "111"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\share_ifi\\bdwallet_pay_sdk\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-sw320dp-v13\\values-sw320dp-v13.xml",
+            "map": [
+                {
+                    "source": "D:\\share_ifi\\bdwallet_pay_sdk\\build\\intermediates\\bundles\\debug\\res\\values-sw320dp-v13\\values-sw320dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "60",
+                        "endOffsets": "111"
+                    }
+                }
+            ]
+        }
+    ]
+}

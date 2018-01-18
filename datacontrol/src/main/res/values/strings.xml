@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DataControl</string>
+    <string name="rent_status">位置 ：%1$s 借出%2$s台, 可借%3$s台</string>
+    <string name="deivce_id">设备id : %1$s</string>
+    <string name="flow_status">流量使用 : %1$s</string>
+    <string name="is_open">是否开机 : %1$s</string>
+    <string name="has_card">是否有sim卡 : %1$s</string>
+</resources>

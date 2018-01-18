@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kunulo.lib_share_ifi">
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <service android:name=".service.ShareIfiSdkService"
+            android:label="ShareIfiSdkService"/>
+
+
+        <!-- 百度地图开发配置 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="tquKliW8nGcNDaZbDiP9RL2LPKBKifoG" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+    </application>
+
+</manifest>

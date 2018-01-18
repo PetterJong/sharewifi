@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_my_wallet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:id="@+id/lay_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <com.kunulo.share_ifi.view.MyButton
+            android:id="@+id/bt_recharge_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/color_button_background"
+            android:text="@string/recharge_balance"
+            android:textSize="@dimen/size_button"
+            android:textColor="@color/color_button_text" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <com.kunulo.share_ifi.view.MyTextView
+                style="@style/myDeviceItemText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/my_deposit" />
+
+            <com.kunulo.share_ifi.view.MyTextView
+                android:id="@+id/tv_my_deposit"
+                style="@style/myDeviceItemText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/unpaid_deposit"
+                android:textColor="#eaa64f" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lay_recharge"
+        android:layout_below="@+id/titlebar">
+
+        <com.kunulo.share_ifi.view.MyTextView
+            android:id="@+id/tv_available_balance"
+            style="@style/myDeviceItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/available_balance" />
+
+        <com.kunulo.share_ifi.view.MyTextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_available_balance"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:text="@string/available"
+            android:textColor="@color/color_button_background"
+            android:textSize="@dimen/size_balance" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

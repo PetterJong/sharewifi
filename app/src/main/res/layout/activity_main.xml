@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kunulo.share_ifi.activity.MainActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include
+            android:id="@+id/sliding_content"
+            layout="@layout/sliding_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <include
+            android:id="@+id/sliding_left"
+            layout="@layout/sliding_left"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:layout_gravity = "start"/>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+</RelativeLayout>
